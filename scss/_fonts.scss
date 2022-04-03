@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import 'functions';
+
+//font size variables
+$bold: 700;
+$semibold: 600;
+$regular: 400;
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo{
+    font-family: 'PT Serif', sans-serif;
+    font-weight: $bold;
+    font-size: rem(36);
+}
+
+.text{
+    &__title{
+        font-weight: $semibold;
+        font-size: rem(18);
+    }
+
+    &__detail{
+        font-size: rem(14);
+    }
+}
+
+.grid{
+    &__title{
+        font-weight: $semibold;
+        font-size: rem(14);
+    }
+
+    &__item{
+        &__role{
+            font-size: rem(10);
+            font-family: 'PT Serif',sans-serif;
+            font-weight: $regular;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .text__title, .text__detail{
+        font-size: rem(18);
+    }
+
+    .grid{
+        &__title{
+            font-size: rem(18);
+        }
+
+        &__item{
+            &__role{
+                font-size: rem(12);
+            }
+        }
+    }
+}

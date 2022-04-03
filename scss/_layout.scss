@@ -1,0 +1,186 @@
+@import 'functions';
+
+//reset the padding and margin
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left:rem(12);
+    position:relative;
+}
+
+.logo{
+    padding: rem(71) 0 rem(38) 0;
+}
+
+.text{
+    &__title{
+        padding-bottom: rem(10);
+    }
+
+    &__detail{
+        height: rem(87);
+        padding-bottom: rem(38);
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: rem(171.94);
+
+    &__item{
+        position: relative;
+        height: rem(301.69);
+        max-width: rem(177.42);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: rem(10);
+        overflow: visible;
+
+        &--img{
+            height: rem(209);
+            max-width: rem(138.72);
+            position: absolute;
+
+        }
+            &__role{
+                position: absolute;
+                transform: rotate(90deg);
+                white-space: nowrap;
+                left: rem(124.68);
+            }
+    }
+    &__title{
+        position: absolute;
+        top: rem(257.7);
+    }
+
+}
+
+.even{
+    top: rem(86.7);
+    &__title{
+        top: rem(296.7);
+    }
+
+    &__role{
+        top: rem(120.7);
+        left: rem(116.28);
+    }
+}
+
+#num1{
+    top: rem(365);
+}
+
+#num3{
+    top: rem(69);
+}
+
+#num5{
+    top: rem(75);
+}
+
+@media screen and (min-width:1110px){
+    body{
+        padding: rem(110) rem(240) rem(156);
+    }
+
+    .logo{
+        max-width: rem(278);
+        height: rem(47);
+        white-space: nowrap;
+    }
+
+    .text{
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: rem(215);
+        }
+        
+        
+        &__detail{
+            max-width: rem(439);
+        }
+
+        
+    }
+
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: rem(244);
+        column-gap: rem(66.04);
+        row-gap: rem(23.69);
+
+        &__item{
+            max-width: rem(335.75);
+            height: rem(449);
+            gap: rem(15);
+
+            &--img{
+                height: rem(341);
+                max-width: rem(237);
+            }
+        }
+
+        &__title{
+            top: rem(405.7);
+        }
+    }
+
+    .even{
+
+        &__titleDt{
+            top:rem(501.7);
+        }
+
+        &__imgDt{
+            top:rem(151.7);
+        }
+    }
+
+    .odd{
+        &__title{
+            top: rem(435.7);
+        }
+    }
+
+    #num1{
+        left: rem(442);
+        top: rem(333);
+    }
+
+    #num2{
+        left: rem(206.68);
+        top: rem(187);
+    }
+
+    #num3{
+        left: rem(220);
+        top: rem(80);
+    }
+
+    #num4{
+        left: rem(215);
+        top: rem(118);
+    }
+
+    #num5{
+        left: rem(218);
+        top: rem(178);
+    }
+
+    #num6{
+        left: rem(220);
+        top: rem(113);
+    }
+
+}
